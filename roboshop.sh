@@ -30,5 +30,5 @@ do
         )
     fi
 
-    echo "IP Address: $IP"
+    echo "IP Address:$IP"
 done
