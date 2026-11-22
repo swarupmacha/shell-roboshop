@@ -6,7 +6,6 @@ for instance in $@
 do 
     instance_id=$(aws ec2 run-instances \
     --image-id "$ami_id" \
-    --count 1 \
     --instance-type t3.micro \
     --security-group-ids "$sg_id" \
     --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$instance}]" \
